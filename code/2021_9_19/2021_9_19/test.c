@@ -25,9 +25,25 @@ int main()
 	//printf("%d\n", strlen(arr));   //strlen()  求字符串长度
 
 
-	int a = 2;
-	a += 2;
-	printf("%d", a);
+	//int a = 2;
+	//a += 2;
+	//printf("%d", a);
+
+	
+	int a = 0;
+	scanf("%d",&a);
+	int b = (a % 2);
+	if (b == 1)
+		printf("奇数");
+	else
+		printf("偶数");
+
+
+
+
+	//int a = 1 % 2;
+	//printf("%d", a);
+
 
 
 	return 0;
