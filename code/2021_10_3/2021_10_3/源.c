@@ -84,25 +84,22 @@
 //}
 
 #include <stdio.h>
+#include <math.h>
 int main()
 {
-    int t = 0;
-    scanf("%d", &t);
-    int wugui = 0;
-    int tuzi = 0;
-    int min = 0;
-    while (min <= t)
-    {
-        if (t % 10 == 0)
-        {
-            if (tuzi > wugui)
-            {
-
-            }
-        }
-        wugui = 3 * t;
-        tuzi = 9 * t;
-        t++;
-    }
-
+	int n = 0;
+	scanf("%d", &n);
+	if (n == 1)
+	{
+		printf("0");
+	}
+	else if(n >= 2)
+	{
+		double a = 0;
+		double b = (1.0 + sqrt(5)) / 2;
+		double c = (1.0 - sqrt(5)) / 2;
+		a = (1.0 / sqrt(5)) * (pow(b, n) - pow(c, n));
+		printf("%.0lf", a);
+	}
+	return 0;
 }
