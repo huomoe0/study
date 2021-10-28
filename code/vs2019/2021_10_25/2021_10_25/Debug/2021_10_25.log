@@ -1,0 +1,49 @@
+﻿  test.cpp
+C:\Users\wenzhu15\Desktop\study\code\vs2019\2021_10_25\2021_10_25\test.cpp(8,1): error C3874: “main”的返回类型应为“int”而非“__int64”
+C:\Users\wenzhu15\Desktop\study\code\vs2019\2021_10_25\2021_10_25\test.cpp(9,10): error C3083: “__cxx11”:“::”左侧的符号必须是一种类型
+C:\Users\wenzhu15\Desktop\study\code\vs2019\2021_10_25\2021_10_25\test.cpp(11,10): error C3083: “__cxx11”:“::”左侧的符号必须是一种类型
+C:\Users\wenzhu15\Desktop\study\code\vs2019\2021_10_25\2021_10_25\test.cpp(13,5): error C3861: “_main”: 找不到标识符
+C:\Users\wenzhu15\Desktop\study\code\vs2019\2021_10_25\2021_10_25\test.cpp(14,40): error C2665: “std::allocator<char>::allocator”: 2 个重载中没有一个可以转换所有参数类型
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\xmemory(827,5): message : 可能是“std::allocator<char>::allocator(const std::allocator<char> &) noexcept”
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\xmemory(825,5): message : 或    “std::allocator<char>::allocator(void) noexcept”
+C:\Users\wenzhu15\Desktop\study\code\vs2019\2021_10_25\2021_10_25\test.cpp(14,40): message : 尝试匹配参数列表“(char *)”时
+C:\Users\wenzhu15\Desktop\study\code\vs2019\2021_10_25\2021_10_25\test.cpp(15,10): error C3083: “__cxx11”:“::”左侧的符号必须是一种类型
+C:\Users\wenzhu15\Desktop\study\code\vs2019\2021_10_25\2021_10_25\test.cpp(15,31): error C2059: 语法错误:“<”
+C:\Users\wenzhu15\Desktop\study\code\vs2019\2021_10_25\2021_10_25\test.cpp(15,85): error C2039: "basic_string": 不是 "`global namespace'" 的成员
+C:\Users\wenzhu15\Desktop\study\code\vs2019\2021_10_25\2021_10_25\test.cpp(16,41): error C2660: “std::allocator<char>::~allocator”: 函数不接受 1 个参数
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\xmemory(830,28): message : 参见“std::allocator<char>::~allocator”的声明
+C:\Users\wenzhu15\Desktop\study\code\vs2019\2021_10_25\2021_10_25\test.cpp(17,5): error C3861: “change”: 找不到标识符
+C:\Users\wenzhu15\Desktop\study\code\vs2019\2021_10_25\2021_10_25\test.cpp(18,10): error C3083: “__cxx11”:“::”左侧的符号必须是一种类型
+C:\Users\wenzhu15\Desktop\study\code\vs2019\2021_10_25\2021_10_25\test.cpp(18,31): error C2059: 语法错误:“<”
+C:\Users\wenzhu15\Desktop\study\code\vs2019\2021_10_25\2021_10_25\test.cpp(18,86): error C2523: “::~basic_string”: 析构函数 标记不匹配
+C:\Users\wenzhu15\Desktop\study\code\vs2019\2021_10_25\2021_10_25\test.cpp(18,86): error C2039: "basic_string": 不是 "`global namespace'" 的成员
+C:\Users\wenzhu15\Desktop\study\code\vs2019\2021_10_25\2021_10_25\test.cpp(19,73): error C2065: “refptr__ZSt4cout”: 未声明的标识符
+C:\Users\wenzhu15\Desktop\study\code\vs2019\2021_10_25\2021_10_25\test.cpp(21,10): error C3083: “__cxx11”:“::”左侧的符号必须是一种类型
+C:\Users\wenzhu15\Desktop\study\code\vs2019\2021_10_25\2021_10_25\test.cpp(21,31): error C2059: 语法错误:“<”
+C:\Users\wenzhu15\Desktop\study\code\vs2019\2021_10_25\2021_10_25\test.cpp(21,86): error C2523: “::~basic_string”: 析构函数 标记不匹配
+C:\Users\wenzhu15\Desktop\study\code\vs2019\2021_10_25\2021_10_25\test.cpp(21,86): error C2039: "basic_string": 不是 "`global namespace'" 的成员
+C:\Users\wenzhu15\Desktop\study\code\vs2019\2021_10_25\2021_10_25\test.cpp(26,6): error C3083: “__cxx11”:“::”左侧的符号必须是一种类型
+C:\Users\wenzhu15\Desktop\study\code\vs2019\2021_10_25\2021_10_25\test.cpp(26,43): error C3083: “__cxx11”:“::”左侧的符号必须是一种类型
+C:\Users\wenzhu15\Desktop\study\code\vs2019\2021_10_25\2021_10_25\test.cpp(26,73): error C3083: “__cxx11”:“::”左侧的符号必须是一种类型
+C:\Users\wenzhu15\Desktop\study\code\vs2019\2021_10_25\2021_10_25\test.cpp(28,5): error C2065: “_BYTE”: 未声明的标识符
+C:\Users\wenzhu15\Desktop\study\code\vs2019\2021_10_25\2021_10_25\test.cpp(28,12): error C2065: “v2”: 未声明的标识符
+C:\Users\wenzhu15\Desktop\study\code\vs2019\2021_10_25\2021_10_25\test.cpp(29,5): error C2065: “_BYTE”: 未声明的标识符
+C:\Users\wenzhu15\Desktop\study\code\vs2019\2021_10_25\2021_10_25\test.cpp(29,12): error C2065: “v3”: 未声明的标识符
+C:\Users\wenzhu15\Desktop\study\code\vs2019\2021_10_25\2021_10_25\test.cpp(31,10): error C3083: “__cxx11”:“::”左侧的符号必须是一种类型
+C:\Users\wenzhu15\Desktop\study\code\vs2019\2021_10_25\2021_10_25\test.cpp(32,10): error C3083: “__cxx11”:“::”左侧的符号必须是一种类型
+C:\Users\wenzhu15\Desktop\study\code\vs2019\2021_10_25\2021_10_25\test.cpp(37,9): error C2065: “v2”: 未声明的标识符
+C:\Users\wenzhu15\Desktop\study\code\vs2019\2021_10_25\2021_10_25\test.cpp(37,15): error C2065: “_BYTE”: 未声明的标识符
+C:\Users\wenzhu15\Desktop\study\code\vs2019\2021_10_25\2021_10_25\test.cpp(37,21): error C2059: 语法错误:“)”
+C:\Users\wenzhu15\Desktop\study\code\vs2019\2021_10_25\2021_10_25\test.cpp(37,27): error C3083: “__cxx11”:“::”左侧的符号必须是一种类型
+C:\Users\wenzhu15\Desktop\study\code\vs2019\2021_10_25\2021_10_25\test.cpp(37,102): error C2039: "[]": 不是 "`global namespace'" 的成员
+C:\Users\wenzhu15\Desktop\study\code\vs2019\2021_10_25\2021_10_25\test.cpp(38,10): error C2065: “v2”: 未声明的标识符
+C:\Users\wenzhu15\Desktop\study\code\vs2019\2021_10_25\2021_10_25\test.cpp(39,9): error C2065: “v3”: 未声明的标识符
+C:\Users\wenzhu15\Desktop\study\code\vs2019\2021_10_25\2021_10_25\test.cpp(39,15): error C2065: “_BYTE”: 未声明的标识符
+C:\Users\wenzhu15\Desktop\study\code\vs2019\2021_10_25\2021_10_25\test.cpp(39,21): error C2059: 语法错误:“)”
+C:\Users\wenzhu15\Desktop\study\code\vs2019\2021_10_25\2021_10_25\test.cpp(39,27): error C3083: “__cxx11”:“::”左侧的符号必须是一种类型
+C:\Users\wenzhu15\Desktop\study\code\vs2019\2021_10_25\2021_10_25\test.cpp(39,102): error C2039: "[]": 不是 "`global namespace'" 的成员
+C:\Users\wenzhu15\Desktop\study\code\vs2019\2021_10_25\2021_10_25\test.cpp(40,10): error C2065: “v3”: 未声明的标识符
+C:\Users\wenzhu15\Desktop\study\code\vs2019\2021_10_25\2021_10_25\test.cpp(40,33): error C2065: “v3”: 未声明的标识符
+C:\Users\wenzhu15\Desktop\study\code\vs2019\2021_10_25\2021_10_25\test.cpp(42,10): error C3083: “__cxx11”:“::”左侧的符号必须是一种类型
+C:\Users\wenzhu15\Desktop\study\code\vs2019\2021_10_25\2021_10_25\test.cpp(42,31): error C2059: 语法错误:“<”
+C:\Users\wenzhu15\Desktop\study\code\vs2019\2021_10_25\2021_10_25\test.cpp(42,85): error C2039: "basic_string": 不是 "`global namespace'" 的成员
