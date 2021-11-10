@@ -1,4 +1,0 @@
-﻿  test.c
-C:\Users\wenzhu15\Desktop\code\2021_9_14\2021_9_14\test.c(16,9): warning C4477: “printf”: 格式字符串“%d”需要类型“int”的参数，但可变参数 1 拥有了类型“int *”
-C:\Users\wenzhu15\Desktop\code\2021_9_14\2021_9_14\test.c(16,9): warning C4477: “printf”: 格式字符串“%d”需要类型“int”的参数，但可变参数 2 拥有了类型“int *”
-  2021_9_14.vcxproj -> C:\Users\wenzhu15\Desktop\code\2021_9_14\Debug\2021_9_14.exe
