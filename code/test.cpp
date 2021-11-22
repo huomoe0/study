@@ -1,33 +1,33 @@
-#include <bits/stdc++.h>
-using namespace std;
+#include <stdio.h>
+void move(int a[],int n,int m)
+{
+    int i,t,b[10000];
+    for(i = 0;i < n-m;i++)
+    {
+       b[i+m] = a[i];
+    }
+    for(i = n-m;i < n;i++)
+    {
+       b[i-n+m] = a[i]; 
+    }
+    for(i = 0;i < n;i++)
+    {
+        a[i] = b[i];
+    }
+}
 int main()
 {
-    int n,m;
-    map<string,int> shop;
-    string name;
-    int p;
-    cin >> n;
-    for(int i = 0;i < n;i++)
+    int n,m,a[10005] = {0},i;
+    scanf("%d %d",&n,&m);
+    m %= n;
+    for(i = 0;i < n;i++)
     {
-        cin >> name;
+        scanf("%d",&a[i]);
     }
-    cin >> m;
-    while(m--)
+    move(a,n,m);
+    for(i = 0;i < n;i++)
     {
-        shop.clear();
-        for(int i = 0;i < n;i++)
-        {
-            cin >> p >> name;
-            shop[name] += p;
-        }
-        int rank = 1;
-        map<string,int>::iterator it;
-        for(it = shop.begin();it != shop.end();it++)
-        {
-            if(shop["memory"] < it->second)
-                rank++;
-        }
-        cout << rank << endl;
+        printf("%d ",a[i]);
     }
     return 0;
 }
