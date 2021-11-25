@@ -100,5 +100,8 @@
         "memory_resource": "cpp",
         "string_view": "cpp"
     },
-    "C_Cpp.errorSquiggles": "Enabled"
+    "C_Cpp.errorSquiggles": "Enabled",
+    "code-runner.showExecutionMessage": true,
+    "code-runner.saveFileBeforeRun": true,
+    "editor.minimap.enabled": false
 }
