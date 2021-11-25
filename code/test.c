@@ -1,27 +1,15 @@
 #include <stdio.h>
 #include <math.h>
+#include <string.h>
+#include <limits.h>
 int main()
 {
-    int i,n,j,flag = 0,first = 1;
-    scanf("%d",&n);
-    for(i = 11;i <= n;i += 10)
+    char a[1000];
+    int i;
+    for(i = 0;i < 1000;i++)
     {
-        for(j = 2;j <= sqrt(i);j++)
-        {
-            if(i % j == 0)
-                break;
-        }
-        if(j > sqrt(i))
-        {
-            flag = 1;
-            if(first == 1)
-            {
-                printf("%d",i);
-                first = 0;
-            }
-            else    printf(" %d",i);
-        }
+        a[i] = -1 - i;
     }
-    if(flag == 0)   printf("-1");
+    printf("%d",strlen(a));
     return 0;
 }

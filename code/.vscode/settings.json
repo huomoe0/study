@@ -98,7 +98,9 @@
         "xtree": "cpp",
         "xutility": "cpp",
         "memory_resource": "cpp",
-        "string_view": "cpp"
+        "string_view": "cpp",
+        "limits.h": "c",
+        "stdio.h": "c"
     },
     "C_Cpp.errorSquiggles": "Enabled",
     "code-runner.showExecutionMessage": true,
