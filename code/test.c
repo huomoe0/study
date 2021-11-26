@@ -2,14 +2,27 @@
 #include <math.h>
 #include <string.h>
 #include <limits.h>
+struct a
+{
+    char x;
+    char b;
+    //char c;
+    //char d;
+    int y;
+    double z;
+};
+union aa
+{
+    char x;
+    char b;
+    char c;
+    int n;
+    char d[20];
+};
 int main()
 {
-    char a[1000];
-    int i;
-    for(i = 0;i < 1000;i++)
-    {
-        a[i] = -1 - i;
-    }
-    printf("%d",strlen(a));
+    
+    printf("%d\n",sizeof(struct a));
+    printf("%d\n",sizeof(union aa));
     return 0;
 }
