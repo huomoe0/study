@@ -1,0 +1,6 @@
+﻿  test.c
+C:\Users\wenzhu15\Desktop\study\code\项目\测试\测试\test.c(24,20): warning C4018: “<”: 有符号/无符号不匹配
+C:\Users\wenzhu15\Desktop\study\code\项目\测试\测试\test.c(26,21): warning C4018: “<”: 有符号/无符号不匹配
+C:\Users\wenzhu15\Desktop\study\code\项目\测试\测试\test.c(48,20): warning C4047: “函数”:“const char *”与“int”的间接级别不同
+C:\Users\wenzhu15\Desktop\study\code\项目\测试\测试\test.c(48,17): warning C4024: “strlen”: 形参和实参 1 的类型不同
+  测试.vcxproj -> C:\Users\wenzhu15\Desktop\study\code\项目\测试\Debug\测试.exe
