@@ -55,6 +55,7 @@
 //}
 
 #include <stdio.h>
+#include <string.h>
 struct s
 {
 	char a;
@@ -70,10 +71,15 @@ int main()
 	//printf("%d\n", sizeof(struct s));
 
 
-	int a[5][5];
-	int(*p)[4];
-	p = a;
-	printf("%p,%d\n", &p[4][2] - &a[4][2], &p[4][2] - &a[4][2]);
+	//int a[5][5];
+	//int(*p)[4];
+	//p = a;
+	//printf("%p,%d\n", &p[4][2] - &a[4][2], &p[4][2] - &a[4][2]);
+
+	char a[20] = "aaaaaaaaa";
+	char b[5] = "bbbb";
+	strcpy(a, b); //只改变对应的位置
+	printf("%s\n", a);
 	return 0;
 }
 
