@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "bc91b1b8-3ce6-47be-ad21-3b549c3200ef": {
+      "ProjectGuid": "bc91b1b8-3ce6-47be-ad21-3b549c3200ef",
+      "DisplayName": "测试",
+      "ColorIndex": 0
+    }
+  },
+  "NextColorIndex": 1
+}
