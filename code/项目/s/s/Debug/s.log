@@ -1,0 +1,3 @@
+﻿  test.cpp
+C:\Users\wenzhu15\Desktop\study\code\项目\s\s\test.cpp(152,25): warning C4390: “;”: 找到空的受控语句；这是否是有意的?
+  s.vcxproj -> C:\Users\wenzhu15\Desktop\study\code\项目\s\Debug\s.exe
