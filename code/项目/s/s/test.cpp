@@ -413,12 +413,35 @@
 //    return 0;
 //}
 
+//#include <bits/stdc++.h>
+//using namespace std;
+//int main()
+//{
+//	char a[50] = { 0 };
+//	scanf("%s", a);
+//	printf("%s", a);
+//	return 0;
+//}
+
 #include <bits/stdc++.h>
 using namespace std;
+int ans[510], flag[510], cnt = 0, sum = 0;
 int main()
 {
-	char a[50] = { 0 };
-	scanf("%s", a);
-	printf("%s", a);
-	return 0;
+    int m, n;
+    scanf("%d %d", &m, &n);
+    for (int i = 2; i * i <= n; i++)
+    {
+        if (!flag[i])
+        {
+            for (int j = 2 * i; j * j <= n; j+=i)  flag[j] = 1;
+            for (int j = max(2, (m + i - 1) / i) * i; j <= n; j += i)  ans[j-m] = 1;
+        }
+    }
+    for (int i = 0; i <= n-m; i++)
+    {
+        if (!ans[i])    cnt++, sum += i+m;
+    }
+    printf("%d %d", cnt, sum);
+    return 0;
 }
