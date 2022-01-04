@@ -423,25 +423,105 @@
 //	return 0;
 //}
 
-#include <bits/stdc++.h>
-using namespace std;
-int ans[510], flag[510], cnt = 0, sum = 0;
+//#include <bits/stdc++.h>
+//using namespace std;
+//int ans[510], flag[510], cnt = 0, sum = 0;
+//int main()
+//{
+//    int m, n;
+//    scanf("%d %d", &m, &n);
+//    for (int i = 2; i * i <= n; i++)
+//    {
+//        if (!flag[i])
+//        {
+//            for (int j = 2 * i; j * j <= n; j+=i)  flag[j] = 1;
+//            for (int j = max(2, (m + i - 1) / i) * i; j <= n; j += i)  ans[j-m] = 1;
+//        }
+//    }
+//    for (int i = 0; i <= n-m; i++)
+//    {
+//        if (!ans[i])    cnt++, sum += i+m;
+//    }
+//    printf("%d %d", cnt, sum);
+//    return 0;
+//}
+
+//#include <stdio.h>
+//long long lcm(long long a, long long b)
+//{
+//    long long x = a, y = b;
+//    long long r = a % b;
+//    while (r)
+//    {
+//        a = b;
+//        b = r;
+//        r = a % b;
+//    }
+//    return x / b * y;
+//}
+//void hj(long long* a, long long* b)
+//{
+//    int sign = 0;
+//    if (*a < 0)   sign = 1, * a = -*a;
+//    for (long long i = 2; i <= (*a < *b ? *a : *b) && *a > 1 && *b > 1; i++)
+//    {
+//        while (*a % i == 0 && *b % i == 0)
+//        {
+//            *a /= i;
+//            *b /= i;
+//        }
+//    }
+//    if (sign)    *a = -*a;
+//}
+//int main()
+//{
+//    int n;
+//    long long x = 0, y = 1;
+//    scanf("%d", &n);
+//    while (n--)
+//    {
+//        long long a, b, t;
+//        scanf("%lld/%lld", &a, &b);
+//        hj(&a, &b);
+//        hj(&x, &y);
+//        t = lcm(y, b);
+//        x *= t / y;
+//        y *= t / y;
+//        a *= t / b;
+//        b *= t / b;
+//        x += a;
+//    }
+//    long long zs = x / y;
+//    if (zs)  printf("%lld ", zs);
+//    if (x % y != 0)  printf("%lld/%lld", x, y);
+//    return 0;
+//}
+
+#include <stdio.h>
+#include <string.h>
 int main()
 {
-    int m, n;
-    scanf("%d %d", &m, &n);
-    for (int i = 2; i * i <= n; i++)
+    char s[1010] = { 0 };
+    fgets(s, 1005, stdin);
+    int len = strlen(s), ans = 1;
+    for (int i = 0; i < len; i++)
     {
-        if (!flag[i])
+        int l = i, r = len - 1;
+        while (s[l] != s[r] && l < r)
         {
-            for (int j = 2 * i; j * j <= n; j+=i)  flag[j] = 1;
-            for (int j = max(2, (m + i - 1) / i) * i; j <= n; j += i)  ans[j-m] = 1;
+            r--;
+        }
+        if (r > l)
+        {
+            int t = r-l + 1;
+            while (l < r)
+            {
+                if (s[l] != s[r])    break;
+                l++, r--;
+            }
+            if (l >= r && t > ans)    ans = t;
         }
     }
-    for (int i = 0; i <= n-m; i++)
-    {
-        if (!ans[i])    cnt++, sum += i+m;
-    }
-    printf("%d %d", cnt, sum);
+    printf("%d", ans);
     return 0;
 }

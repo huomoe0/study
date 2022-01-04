@@ -1,5 +1,6 @@
 #pragma once
 #define _CRT_SECURE_NO_WARNINGS 1
+#define NAME_LEN 20
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -7,7 +8,7 @@
 typedef struct wage
 {
 	long long id;
-	char name[20];
+	char name[NAME_LEN];
 	double base,up,down,bonus;
 }wage;
 
@@ -33,6 +34,8 @@ void add(LinkList);
 
 void save(LinkList);
 
-//void search(LinkList);
+void search(LinkList);
 
 void change(LinkList);
+
+void del(LinkList);

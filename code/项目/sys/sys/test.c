@@ -20,10 +20,10 @@ int main()
 			break;
 		case ADD:
 			add(h); break;
-		//case DELETE:
-		//	del(); break;
-		//case SEARCH:
-		//	search(); break;
+		case DELETE:
+			del(h); break;
+		case SEARCH:
+			search(h); break;
 		case CHANGE:
 			change(h); break;
 		case PRINT:
