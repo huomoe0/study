@@ -381,37 +381,37 @@
 //}
 
 
-//#include <bits/stdc++.h> //区间筛[a,b)
-//using namespace std;
-//#define MAXN 1000000
-//typedef long long ll;
-//bool is_prime[MAXN];
-//bool is_prime_small[MAXN];
-//void segment_sieve(ll a, ll b)
-//{
-//    for (ll i = 0; i * i < b; ++i) is_prime_small[i] = true; //初始化[a,b)
-//    for (ll i = 0; i < b - a; ++i) is_prime[i] = true; //初始化，注意下标变化，为了省空间[0,b-a)
-//
-//    for (ll i = 2; i * i < b; ++i)
-//    {
-//        if (is_prime_small[i])
-//        {
-//            for (ll j = 2 * i; j * j < b; j += i) is_prime_small[j] = false;  //筛选[2,sqrt(b));
-//            //(a+i-1)/i得到最接近a的i的倍数，最低是i的2倍，然后筛选
-//            for (ll j = max(2LL, (a + i - 1) / i) * i; j < b; j += i) is_prime[j - a] = false;
-//        }
-//    }
-//}
-//int main()
-//{
-//    ll a, b,cnt = 0;
-//    cin >> a >> b;
-//    segment_sieve(a, b);
-//    for (int i = 0; i < b-a; i++)
-//        if (is_prime[i]) cnt++;
-//    cout << cnt;
-//    return 0;
-//}
+#include <bits/stdc++.h> //区间筛[a,b)
+using namespace std;
+#define MAXN 1000000
+typedef long long ll;
+bool is_prime[MAXN];
+bool is_prime_small[MAXN];
+void segment_sieve(ll a, ll b)
+{
+    for (ll i = 0; i * i < b; ++i) is_prime_small[i] = true; //初始化[a,b)
+    for (ll i = 0; i < b - a; ++i) is_prime[i] = true; //初始化，注意下标变化，为了省空间[0,b-a)
+
+    for (ll i = 2; i * i < b; ++i)
+    {
+        if (is_prime_small[i])
+        {
+            for (ll j = 2 * i; j * j < b; j += i) is_prime_small[j] = false;  //筛选[2,sqrt(b));
+            //(a+i-1)/i得到最接近a的i的倍数，最低是i的2倍，然后筛选
+            for (ll j = max(2LL, (a + i - 1) / i) * i; j < b; j += i) is_prime[j - a] = false;
+        }
+    }
+}
+int main()
+{
+    ll a, b,cnt = 0;
+    cin >> a >> b;
+    segment_sieve(a, b);
+    for (int i = 0; i < b-a; i++)
+        if (is_prime[i]) cnt++;
+    cout << cnt;
+    return 0;
+}
 
 //#include <bits/stdc++.h>
 //using namespace std;
@@ -497,31 +497,31 @@
 //    return 0;
 //}
 
-#include <stdio.h>
-#include <string.h>
-int main()
-{
-    char s[1010] = { 0 };
-    fgets(s, 1005, stdin);
-    int len = strlen(s), ans = 1;
-    for (int i = 0; i < len; i++)
-    {
-        int l = i, r = len - 1;
-        while (s[l] != s[r] && l < r)
-        {
-            r--;
-        }
-        if (r > l)
-        {
-            int t = r-l + 1;
-            while (l < r)
-            {
-                if (s[l] != s[r])    break;
-                l++, r--;
-            }
-            if (l >= r && t > ans)    ans = t;
-        }
-    }
-    printf("%d", ans);
-    return 0;
-}
+//#include <stdio.h>
+//#include <string.h>
+//int main()
+//{
+//    char s[1010] = { 0 };
+//    fgets(s, 1005, stdin);
+//    int len = strlen(s), ans = 1;
+//    for (int i = 0; i < len; i++)
+//    {
+//        int l = i, r = len - 1;
+//        while (s[l] != s[r] && l < r)
+//        {
+//            r--;
+//        }
+//        if (r > l)
+//        {
+//            int t = r-l + 1;
+//            while (l < r)
+//            {
+//                if (s[l] != s[r])    break;
+//                l++, r--;
+//            }
+//            if (l >= r && t > ans)    ans = t;
+//        }
+//    }
+//    printf("%d", ans);
+//    return 0;
+//}

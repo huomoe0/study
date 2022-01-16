@@ -8,7 +8,7 @@ void menu()
 	printf("           3. 查询              \n");
 	printf("           2. 删除              \n");
 	printf("           1. 增加              \n");
-	printf("           0. 退出              \n");
+	printf("           0. 退出(保存)        \n");
 	printf("                                \n");
 }
 
