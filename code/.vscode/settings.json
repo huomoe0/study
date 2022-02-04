@@ -105,5 +105,7 @@
     "C_Cpp.errorSquiggles": "Enabled",
     "code-runner.showExecutionMessage": true,
     "code-runner.saveFileBeforeRun": true,
-    "editor.minimap.enabled": false
+    "editor.minimap.enabled": false,
+    "terminal.explorerKind": "external",
+    "code-runner.clearPreviousOutput": true
 }
