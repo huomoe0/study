@@ -1,3 +1,2 @@
 ﻿  test.cpp
-C:\Users\wenzhu15\Desktop\study\code\项目\s\s\test.cpp(4,21): warning C4244: “初始化”: 从“double”转换到“int”，可能丢失数据
   s.vcxproj -> C:\Users\wenzhu15\Desktop\study\code\项目\s\Debug\s.exe
