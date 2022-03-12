@@ -4,7 +4,7 @@
             "name": "MinGW64",
             "includePath": [
                 "${workspaceFolder}/**",
-                "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.30.30705\\include/**",
+                "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.31.31103\\include/**",
                 "C:\\tool\\mingw64\\lib\\gcc\\x86_64-w64-mingw32\\8.1.0\\include\\c++\\bits/**"
             ],
             "defines": [
