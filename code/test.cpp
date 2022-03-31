@@ -1,13 +1,18 @@
-#include <iostream>
-#include <ctime>
+#include <bits/stdc++.h>
+typedef long long ll;
 using namespace std;
-const int x = 1e9+10;
 int main()
 {
-	//clock_t a = clock();
-	for(int i = 0;i < x;i++)
-		;
-	//clock_t b = clock();
-	//double c = (double)(b-a) / CLOCKS_PER_SEC;
-	//cout << c << "\n";
+	int n,maxn,minn,t;
+	cin >> n;
+	cin >> t;
+	maxn = minn = t-1;
+	for(int i = 2;i <= n;i++)
+	{
+		cin >> t;
+		maxn = max(maxn,t-i);
+		minn = min(minn,t-i);
+	}
+	cout << (maxn-minn+1)/2;
+	return 0;
 }
