@@ -100,12 +100,12 @@
         "memory_resource": "cpp",
         "string_view": "cpp",
         "limits.h": "c",
-        "stdio.h": "c"
+        "stdio.h": "c",
+        "3.2 ([.C": "cpp",
+        "windows.h": "c",
+        "conio.h": "c"
     },
     "C_Cpp.errorSquiggles": "Enabled",
-    "code-runner.showExecutionMessage": true,
-    "code-runner.saveFileBeforeRun": true,
     "editor.minimap.enabled": true,
-    "terminal.explorerKind": "external",
-    "code-runner.clearPreviousOutput": true
+    "terminal.explorerKind": "external"
 }

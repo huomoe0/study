@@ -1,2 +1,4 @@
 ﻿  main.cpp
+C:\Users\Lightty\Desktop\study\code\项目\test\main.cpp(225,57): warning C4474: printf: 格式字符串中传递的参数太多
+C:\Users\Lightty\Desktop\study\code\项目\test\main.cpp(225,57): message : 占位符和其参数预计 0 可变参数，但提供的却是 1 参数
   test.vcxproj -> C:\Users\Lightty\Desktop\study\code\项目\test\x64\Debug\test.exe
