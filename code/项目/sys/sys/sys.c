@@ -40,7 +40,6 @@ void load(LinkList h)
 		tail = p;
 		tail->next = NULL;
 	} while (p);
-
 	fclose(fp);
 }
 
@@ -68,7 +67,6 @@ void add(LinkList h)
 {
 	Node* tail = h ,*p = NULL;
 	while (tail->next != NULL)	tail = tail->next;//尾指针
-
 	int n = 0;
 	do
 	{
@@ -118,6 +116,7 @@ void save(LinkList h) //将数据保存到文件中
 			p->data.id, p->data.name, p->data.base, p->data.up, p->data.down);
 		p = p->next;
 	}
+	fclose(fp);
 }
 
 

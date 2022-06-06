@@ -106,6 +106,6 @@
         "conio.h": "c"
     },
     "C_Cpp.errorSquiggles": "Enabled",
-    "editor.minimap.enabled": true,
+    "editor.minimap.enabled": false,
     "terminal.explorerKind": "external"
 }

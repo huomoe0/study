@@ -108,9 +108,35 @@ void InThreading(BiThrTree p)
 }
 void InOrderThreading(BiThrTree *Thrt,BiThrTree T)
 {
-	
+	(*Thrt) = (BiThrTree)malloc(sizeof(BiThrNode));
+	if(!*Thrt)	return;
+	(*Thrt)->LTag = 0,(*Thrt)->RTag = 1;
+	(*Thrt)->rchild = (*Thrt);
+	if(!T)	(*Thrt)->lchild = (*Thrt);
+	else
+	{
+		(*Thrt)->lchild = T;
+		pre = (*Thrt);
+		InThreading(T);
+		pre->rchild = (*Thrt),pre->RTag = 1;
+		(*Thrt)->rchild = pre;
+	}
 }
-
+void InOrderTraverse_Thr(BiThrTree T)
+{
+	if(!T)	return;
+	BiThrTree p = T->lchild;
+	while(p!=T)
+	{
+		while(p->LTag == 0)	p = p->lchild;
+		printf("%c ",p->data );
+		while(p->RTag == 1 && p->rchild != T)
+		{
+			p = p->rchild;printf("%c ",p->data);
+		}
+		p = p->rchild;
+	}
+}
 
 void test01()
 {
@@ -125,10 +151,15 @@ void test01()
 	putchar('\n');
 	PostOrderTraverse(NewT);
 }
+
+void test02()
+{
+	
+}
 int main()
 {
-	test01();
-	
+	//test01();
+	test02();
 	
 	return 0;
 }
