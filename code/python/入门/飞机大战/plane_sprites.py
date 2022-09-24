@@ -44,7 +44,8 @@ class Enemy(GameSprite):
             self.kill()
 
     def __del__(self):
-        print("敌机挂了")
+        # print("敌机挂了")
+        pass
 
 
 class Hero(GameSprite):

@@ -11,8 +11,8 @@ class PlaneGame(object):
         self.clock = pygame.time.Clock()
 
         self.__create_sprites()
-        pygame.time.set_timer(CREATE_ENEMY_EVENT, 1000)
-        pygame.time.set_timer(HERO_FIRE_EVENT, 500)
+        pygame.time.set_timer(CREATE_ENEMY_EVENT, 5)
+        pygame.time.set_timer(HERO_FIRE_EVENT, 1)
 
     def start_game(self):
         print("游戏开始...")

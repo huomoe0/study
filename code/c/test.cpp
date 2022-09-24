@@ -1,13 +1,10 @@
-#include <cstdio>
-#include <iostream>
-int test(int a,int b = 0,int c = 0)
-{
-    printf("a = %d b = %d c = %d",a,b,c);
-    return 0;
-}
-
+#include <stdio.h>
 int main()
 {
-    test(1,,1);
+    float r, y, p;
+    r = 0.0225;
+    scanf("%f", &y);
+    p = y * (1 + r);
+    printf("p=%7.2f\n", p);
     return 0;
 }
