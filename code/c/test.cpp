@@ -1,10 +1,14 @@
-#include <stdio.h>
+#include <iostream>
+#include <cstdio>
+#include <cstring>
+#include <conio.h>
+using namespace std;
 int main()
 {
-    float r, y, p;
-    r = 0.0225;
-    scanf("%f", &y);
-    p = y * (1 + r);
-    printf("p=%7.2f\n", p);
-    return 0;
+	char a[20] = {};
+	char c;
+	while(c = getche())
+	
+	printf("%c\n", c);
+	return 0;
 }

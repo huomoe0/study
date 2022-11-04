@@ -107,5 +107,9 @@
     },
     "C_Cpp.errorSquiggles": "Enabled",
     "editor.minimap.enabled": false,
-    "terminal.explorerKind": "external"
+    "terminal.explorerKind": "external",
+    "commentTranslate.source": "Bing",
+    "commentTranslate.targetLanguage": "zh-CN",
+    "commentTranslate.multiLineMerge": false,
+    "commentTranslate.hover.enabled": true
 }
