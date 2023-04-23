@@ -1,0 +1,146 @@
+CREATE DATABASE TEST;
+USE TEST;
+
+CREATE TABLE 部门 (
+    部门号 CHAR(10) PRIMARY KEY,
+    名称 CHAR(16),
+    经理名 CHAR(10),
+    地址 CHAR(50),
+    电话号 CHAR(11)
+);
+
+CREATE TABLE 职工 (
+    职工号 CHAR(10) PRIMARY KEY,
+    姓名 CHAR(10),
+    年龄 SMALLINT,
+    职务 CHAR(12),
+    工资 NUMERIC(8,2),
+    部门号 CHAR(10),
+    FOREIGN KEY ( 部门号 ) REFERENCES 部门(部门号)
+);
+
+CREATE USER 王明 IDENTIFIED BY '123456';
+CREATE USER 李勇 IDENTIFIED BY '123456';
+CREATE USER 刘星 IDENTIFIED BY '123456';
+CREATE USER 张新 IDENTIFIED BY '123456';
+CREATE USER 周平 IDENTIFIED BY '123456';
+CREATE USER 杨兰 IDENTIFIED BY '123456';
+
+INSERT INTO 部门 VALUES('BM001','部门一','经理一','地址一','12345678901');
+INSERT INTO 部门 VALUES('BM002','部门二','经理二','地址二','12345678902');
+INSERT INTO 部门 VALUES('BM003','部门三','经理三','地址三','12345678903');
+
+INSERT INTO 职工 VALUES('ZG001','王明',31,'职位一',11000,'BM001');
+INSERT INTO 职工 VALUES('ZG002','李勇',32,'职位二',12000,'BM002');
+INSERT INTO 职工 VALUES('ZG003','刘星',33,'职位三',13000,'BM003');
+INSERT INTO 职工 VALUES('ZG004','张新',34,'职位四',14000,'BM002');
+INSERT INTO 职工 VALUES('ZG005','周平',35,'职位五',15000,'BM003');
+INSERT INTO 职工 VALUES('ZG006','杨兰',36,'职位六',16000,'BM001');
+
+
+
+-- 7.1
+GRANT SELECT
+ON 职工
+TO 王明;
+
+GRANT SELECT
+ON 部门
+TO 王明;
+
+-- 7.2
+GRANT INSERT, DELETE
+ON 职工
+TO 李勇;
+
+GRANT INSERT, DELETE
+ON 部门
+TO 李勇;
+
+-- 7.3
+CREATE VIEW 职工视图
+AS
+SELECT *
+FROM `职工`
+WHERE CONCAT(姓名,'@localhost') = USER();
+GRANT SELECT
+ON 职工视图 
+TO 王明,李勇,刘星, 张新,周平,杨兰;
+
+-- 7.4
+GRANT SELECT, UPDATE(工资)
+ON `职工`
+TO 刘星;
+
+-- 7.5
+GRANT ALTER
+ON `职工`
+TO 张新;
+GRANT ALTER
+ON `部门`
+TO 张新;
+
+-- 7.6
+GRANT ALL PRIVILEGES
+ON `部门`
+TO 周平
+WITH GRANT OPTION;
+GRANT ALL PRIVILEGES
+ON `职工`
+TO 周平
+WITH GRANT OPTION;
+
+-- 7.7
+CREATE VIEW 职工工资(名称,最高工资,最低工资,平均工资)
+AS
+SELECT `部门`.`名称`, MAX(`工资`), MIN(`工资`), AVG(`工资`)
+FROM `职工`, `部门`
+WHERE `职工`.`部门号` = `部门`.`部门号`
+GROUP BY `部门`.`部门号`;
+GRANT SELECT
+ON 职工工资 
+TO 杨兰;
+
+-- 8.1
+REVOKE SELECT
+ON `部门`
+FROM 王明;
+REVOKE SELECT
+ON `职工`
+FROM 王明;
+
+-- 8.2
+REVOKE INSERT, DELETE
+ON `部门`
+FROM 李勇;
+REVOKE INSERT, DELETE
+ON `职工`
+FROM 李勇;
+
+-- 8.3
+REVOKE SELECT
+ON 职工视图 
+FROM 王明,李勇,刘星, 张新,周平,杨兰;
+
+-- 8.4
+REVOKE SELECT, UPDATE(`工资`)
+ON `职工`
+FROM 刘星;
+
+-- 8.5
+REVOKE ALTER
+ON `职工`
+FROM 张新;
+REVOKE ALTER
+ON `部门`
+FROM 张新;
+
+-- 8.6
+REVOKE ALL PRIVILEGES 
+ON `职工`
+FROM 周平;
+
+-- 8.7
+REVOKE SELECT
+ON 工资视图 
+FROM 杨兰;
