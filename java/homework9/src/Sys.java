@@ -13,6 +13,12 @@ import java.util.*;
 
 public class Sys {
 
+    private static boolean existGrade(ArrayList<CourseStatistic> SC, String id, String cname) {
+        for(CourseStatistic i : SC) {
+            if(i.getCname().equals(cname) && i.getSid().equals(id))  return true;
+        }
+        return false;
+    }
     public static void inputXLS(ArrayList<Student> S, ArrayList<Course> C, ArrayList<CourseStatistic> SC) throws BiffException, IOException {
         File file = new File("data\\grade.xls");
         Workbook workbook = Workbook.getWorkbook(file);
@@ -26,7 +32,7 @@ public class Sys {
             double grade = Double.parseDouble(sheet.getCell(4, i).getContents());
             if(!existStudent(S, id)) S.add(new Student(id, name, gender));
             if(!existCourse(C, cname))    C.add(new Course(cname));
-            SC.add(new CourseStatistic(id, cname, grade));
+            if(!existGrade(SC, id, cname)) SC.add(new CourseStatistic(id, cname, grade));
 
         }
         System.out.println("添加成功");
@@ -75,7 +81,7 @@ public class Sys {
         String[] info = sc.nextLine().split("[,，]");
         if(!existStudent(S, info[0])) S.add(new Student(info[0], info[1], info[2]));
         if(!existCourse(C, info[3]))    C.add(new Course(info[3]));
-        SC.add(new CourseStatistic(info[0], info[3], Double.parseDouble(info[4])));
+        if(!existGrade(SC, info[0], info[3])) SC.add(new CourseStatistic(info[0], info[3], Double.parseDouble(info[4])));
         System.out.println("添加成功");
     }
     public static void inputCSV(ArrayList<Student> S, ArrayList<Course> C, ArrayList<CourseStatistic> SC) throws IOException {
@@ -88,7 +94,7 @@ public class Sys {
             String[] info = tmp.split("\t");
             if(!existStudent(S, info[0])) S.add(new Student(info[0], info[1], info[2]));
             if(!existCourse(C, info[3]))    C.add(new Course(info[3]));
-            SC.add(new CourseStatistic(info[0], info[3], Double.parseDouble(info[4])));
+            if(!existGrade(SC, info[0], info[3])) SC.add(new CourseStatistic(info[0], info[3], Double.parseDouble(info[4])));
         }
 
         System.out.println("添加成功");
