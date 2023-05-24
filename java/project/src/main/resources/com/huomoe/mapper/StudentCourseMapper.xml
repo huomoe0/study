@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+
+<mapper namespace="com.huomoe.mapper.StudentCourseMapper">
+
+    <insert id="add">
+        insert into tb_studentcourse(uid, cid, grade)
+        values (#{uid}, #{cid}, #{grade});
+    </insert>
+
+    <delete id="deleteById">
+        delete from tb_studentcourse where uid = #{uid} and cid = #{cid};
+    </delete>
+
+    <select id="selectById" resultType="com.huomoe.vo.StudentCourse">
+        select * from tb_studentcourse
+        where uid = #{uid} and cid = #{cid}
+    </select>
+
+    <select id="selectByCondition" resultType="com.huomoe.vo.StudentCourse">
+        select * from tb_studentcourse
+        <where>
+            <if test="uid != null">
+                and uid = #{uid}
+            </if>
+            <if test="cid != null">
+                and cid = #{cid}
+            </if>
+        </where>
+    </select>
+
+
+
+</mapper>
