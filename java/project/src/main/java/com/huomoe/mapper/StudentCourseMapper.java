@@ -12,7 +12,7 @@ public interface StudentCourseMapper {
 
     List<StudentCourse> selectByCondition(StudentCourse sc);
 
-
+    List<StudentCourse> selectAll();
     void add(StudentCourse sc);
 
     void add(@Param("uid")Integer uid, @Param("cid")Integer cid, @Param("grade")Double grade);

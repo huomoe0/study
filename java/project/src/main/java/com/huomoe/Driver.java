@@ -3,7 +3,6 @@ package com.huomoe;
 import com.huomoe.dao.CourseDAO;
 import com.huomoe.dao.UserDAO;
 import com.huomoe.vo.User;
-import jxl.write.WriteException;
 
 import java.io.FileReader;
 import java.io.IOException;
@@ -20,17 +19,16 @@ public class Driver {
         Properties properties = new Properties();
         try {
             properties.load(new FileReader("src\\main\\resources\\config.properties"));
+            lastLoginTimes = Integer.parseInt(properties.getProperty("MAX_LOGIN_TIMES"));
         } catch (IOException e) {
             System.out.println("配置文件不存在");
         }
-        lastLoginTimes = Integer.parseInt(properties.getProperty("MAX_LOGIN_TIMES"));
     }
-
-    public static void main(String[] args) throws IOException, WriteException {
-
+    public static void main(String[] args) throws IOException {
         //登陆系统
         while (lastLoginTimes != 0) {
-            if(login()) {
+            currentUser = UserDAO.login();
+            if(currentUser != null) {
                 System.out.println("登录成功,欢迎使用学生选课系统\n姓名: " + currentUser.getName() + "\n" + "身份: " + currentUser.getRole());
                 break;
             }
@@ -47,154 +45,129 @@ public class Driver {
         }
 
         //功能选择
-        switch(currentUser.getRole()) {
-            case "学生":studentInterface();break;
-            case "教师":teacherInterface();break;
-            case "管理员":adminInterface();break;
+        int c = mainMenu();
+        while (c != 0) {
+            switch (c) {
+                case 1:courseManagement();break;
+                case 2:gradeManagement();break;
+                case 3:userManagement();break;
+                default:
+                    System.out.println("请重新输入");
+            }
+            c = mainMenu();
         }
-
         System.out.println("正在退出,欢迎下次使用");
     }
-
-    private static int menu(String role) {
-        System.out.println("========学生选课系统v0.1========");
-        switch (role) {
-            case "学生":
-                System.out.println("1.查看所有课程\n" +
-                        "2.选课\n" +
-                        "3.退选\n" +
-                        "4.成绩查询统计\n" +
-                        "5.修改密码\n" +
-                        "0.退出\n" +
-                        "请选择（0-5）：");
-                break;
-            case "教师":
-                System.out.println("1.查看担任的课程信息\n" +
-                        "2.查看课程选课名单\n" +
-                        "3.输入某课程学生成绩\n" +
-                        "4.成绩导出\n" +
-                        "5.修改密码\n" +
-                        "0.退出\n" +
-                        "请选择（0-5）：");
-                break;
-            case "管理员":
-                System.out.println("1.用户管理\n" +
-                        "2.课程管理\n" +
-                        "3.修改密码\n" +
-                        "0.退出\n" +
-                        "请选择（0-3）：");
-                break;
-        }
-        Scanner scanner = new Scanner(System.in);
-        return scanner.nextInt();
-    }
-
-
-    private static void studentInterface() throws IOException {
-        int c = menu("学生");
-        while (c != 0) {
-            switch (c) {
-                case 1:CourseDAO.viewAllCourse();break;
-                case 2:CourseDAO.selectCourse(currentUser);break;
-                case 3:CourseDAO.dropCourse(currentUser);break;
-                case 4:CourseDAO.gradeQuery(currentUser);break;
-                case 5:UserDAO.changePassword(currentUser);break;
-                default:
-                    System.out.println("请重新输入");
-            }
-            c = menu("学生");
-        }
-    }
-
-
-    private static void teacherInterface() throws IOException, WriteException {
-        int c = menu("教师");
-        while (c != 0) {
-            switch (c) {
-                case 1:CourseDAO.viewTeacherCourse(currentUser);break;
-                case 2:CourseDAO.viewSelectCourseList(currentUser);break;
-                case 3:CourseDAO.addStudentGrade(currentUser);break;
-                case 4:CourseDAO.outputGradeList(currentUser);break;
-                case 5:UserDAO.changePassword(currentUser);break;
-                default:
-                    System.out.println("请重新输入");
-            }
-            c = menu("教师");
-        }
-    }
-    private static void adminInterface() throws IOException {
-        int c = menu("管理员");
-        while (c != 0) {
-            switch (c) {
-                case 1:userManagement();break;
-                case 2:courseManagement();break;
-                case 3:UserDAO.changePassword(currentUser);break;
-                default:
-                    System.out.println("请重新输入");
-            }
-            c = menu("管理员");
-        }
-    }
-
-    private static boolean login() throws IOException {
-        System.out.println("请输入用户名：");
-        Scanner sc = new Scanner(System.in);
-        String username = sc.nextLine();
-        System.out.println("请输入密码：");
-        String password = sc.nextLine();
-
-            currentUser = UserDAO.loginCheck(username, password);
-        return currentUser != null;
-    }
-
-
-    private static int userManagementMenu() {
-        System.out.println("1.添加用户\n" +
-                "2.删除用户\n" +
-                "3.用户导入\n" +
-                "4.用户导出\n" +
+    private static int mainMenu() {
+        System.out.println("========学生选课系统v2.0========\n" +
+                "1.课程管理\n" +
+                "2.成绩管理\n" +
+                "3.用户管理\n" +
                 "0.退出\n" +
-                "请选择（0-4）：");
+                "请选择（0-3）：");
         return new Scanner(System.in).nextInt();
     }
-
-    public static void userManagement() throws IOException {
-        int c = userManagementMenu();
-        while (c != 0) {
-            switch (c) {
-                case 1:UserDAO.addUser();break;
-                case 2:UserDAO.deleteUser();break;
-                case 3:UserDAO.inputUser();break;
-                case 4:UserDAO.outputUser();break;
-                default:
-                    System.out.println("请重新输入");
-            }
-            c = userManagementMenu();
-        }
-    }
-
     private static int courseManagementMenu() {
-        System.out.println("1.添加课程\n" +
-                "2.删除课程\n" +
-                "3.课程导入\n" +
-                "4.课程导出\n" +
+        System.out.println("========课程管理========\n" +
+                "1.课程查询\n" +
+                "2.查看相关课程\n" +
+                "3.选课\n" +
+                "4.退课\n" +
+                "5.新增课程\n" +
+                "6.删除课程\n" +
+                "7.从电子表格导入课程\n" +
+                "8.课程导出到电子表格\n" +
                 "0.退出\n" +
-                "请选择（0-4）：");
+                "请选择（0-8）：");
         return new Scanner(System.in).nextInt();
     }
-
+    private static int gradeManagementMenu() {
+        System.out.println("1.成绩查询\n" +
+                "2.添加成绩\n" +
+                "3.成绩导出到电子表格\n" +
+                "0.退出\n" +
+                "请选择（0-3）：");
+        return new Scanner(System.in).nextInt();
+    }
+    private static int userManagementMenu() {
+        System.out.println("1.修改密码\n" +
+                "2.添加用户\n" +
+                "3.删除用户\n" +
+                "4.从电子表格导入用户\n" +
+                "5.用户导出到电子表格\n" +
+                "0.退出\n" +
+                "请选择（0-5）：");
+        return new Scanner(System.in).nextInt();
+    }
     public static void courseManagement() throws IOException {
-        int c = courseManagementMenu();
-        while (c != 0) {
+        int c;
+        do {
+            c = courseManagementMenu();
+            if(!currentUser.getRole().equals("administrator") && c >= 5) {
+                System.out.println("权限不足");
+                continue;
+            }
+            else if(currentUser.getRole().equals("teacher") && (c == 3 || c == 4) || currentUser.getRole().equals("administrator") && (c >= 2 && c <= 4)) {
+                System.out.println("无需使用该功能");
+                continue;
+            }
+
             switch (c) {
-                case 1:CourseDAO.addCourse();break;
-                case 2:CourseDAO.deleteCourse();break;
-                case 3:CourseDAO.inputCourse();break;
-                case 4:CourseDAO.outputCourse();break;
+                case 1:CourseDAO.queryCourse();break;
+                case 2:CourseDAO.viewRelatedCourse(currentUser);break;
+                case 3:CourseDAO.selectCourse(currentUser);break;
+                case 4:CourseDAO.dropCourse(currentUser);break;
+                case 5:CourseDAO.addCourse();break;
+                case 6:CourseDAO.deleteCourse();break;
+                case 7:CourseDAO.inputCourse();break;
+                case 8:CourseDAO.outputCourse();break;
+                case 0:break;
                 default:
                     System.out.println("请重新输入");
             }
-            c = courseManagementMenu();
-        }
+        }while (c != 0);
+    }
+    private static void gradeManagement() throws IOException {
+        int c;
+        do {
+            c = gradeManagementMenu();
+            if(currentUser.getRole().equals("student") && c >= 2) {
+                System.out.println("权限不足");
+                continue;
+            }
+            if((currentUser.getRole().equals("teacher") || currentUser.getRole().equals("administrator")) && c == 1) {
+                System.out.println("无需使用该功能");
+                continue;
+            }
+
+            switch (c) {
+                case 1:CourseDAO.queryGrade(currentUser);break;
+                case 2:CourseDAO.addStudentGrade();break;
+                case 3:CourseDAO.outputGrade();break;
+                case 0:break;
+                default:
+                    System.out.println("请重新输入");
+            }
+        }while (c != 0);
+    }
+    public static void userManagement() throws IOException {
+        int c;
+        do {
+            c = userManagementMenu();
+            if(!currentUser.getRole().equals("administrator") && c >= 2) {
+                System.out.println("权限不足");
+                continue;
+            }
+            switch (c) {
+                case 1:UserDAO.changePassword(currentUser);break;
+                case 2:UserDAO.addUser();break;
+                case 3:UserDAO.deleteUser();break;
+                case 4:UserDAO.inputUser();break;
+                case 5:UserDAO.outputUser();break;
+                case 0:break;
+                default:
+                    System.out.println("请重新输入");
+            }
+        }while (c != 0);
     }
 }

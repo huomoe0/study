@@ -3,22 +3,34 @@ CREATE DATABASE book;
 USE book;
 
 CREATE TABLE customers (
-	cid CHAR(20) PRIMARY KEY,
-	cname CHAR(16),
-	address VARCHAR(20),
-	cardnumber CHAR(20)
-
+	cid VARCHAR(10) PRIMARY KEY,
+	cname VARCHAR(16) NOT NULL,
+	address VARCHAR(30) NOT NULL,
+	cardnum CHAR(20) NOT NULL
 );
-
-CREATE TABLE books (
-	lsbn CHAR(17) PRIMARY KEY,
-	title VARCHAR(20),
-	author VARCHAR(8),
-	price DECIMAL(10, 2),
-	year_publisher datetime,
-	qty_in_stock INT
-);
-
 CREATE TABLE orders (
-    ordernum CHAR(20) PRIMARY KEY
+    ordernum VARCHAR(10) PRIMARY KEY
+);
+CREATE TABLE books (
+	lsbn CHAR(20) PRIMARY KEY,
+	title VARCHAR(20) NOT NULL,
+	author VARCHAR(8),
+	qty_in_stock INT NOT NULL,
+	price MONEY,
+	year_published DATE
+);
+
+CREATE TABLE place_order (
+	cid VARCHAR(10) FOREIGN KEY REFERENCES customers(cid),
+	ordernum VARCHAR(10) FOREIGN KEY REFERENCES orders(ordernum),
+	order_date DATETIME NOT NULL,
+	PRIMARY KEY(cid,ordernum)
+);
+
+CREATE TABLE order_list (
+	ordernum VARCHAR(10) FOREIGN KEY REFERENCES orders(ordernum),
+	isbn CHAR(20) FOREIGN KEY REFERENCES books(lsbn),
+	qty INT NOT NULL,
+	ship_date DATETIME,
+	PRIMARY KEY(ordernum, isbn)
 );

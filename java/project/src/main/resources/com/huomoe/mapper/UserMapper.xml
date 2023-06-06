@@ -6,13 +6,13 @@
 
 <mapper namespace="com.huomoe.mapper.UserMapper">
     <insert id="add" useGeneratedKeys="true" keyProperty="id">
-        insert into tb_user(id,name,username,password,role)
-        values(#{id},#{name},#{username},#{password},#{role});
+        insert into tb_user(id,name,password,role)
+        values(#{id},#{name},#{password},#{role});
     </insert>
 
     <delete id="deleteById">
         delete from tb_user
-        where username = #{username};
+        where id = #{id};
     </delete>
 
     <select id="selectAll" resultType="com.huomoe.vo.User">
@@ -21,7 +21,7 @@
 
 
     <select id="checkAccount" resultType="com.huomoe.vo.User">
-        select * from tb_user where username=#{username} and password=#{password};
+        select * from tb_user where id=#{id} and password=#{password};
     </select>
 
 </mapper>

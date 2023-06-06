@@ -6,8 +6,8 @@
 
 <mapper namespace="com.huomoe.mapper.CourseMapper">
     <insert id="add" useGeneratedKeys="true" keyColumn="id">
-        insert into tb_course(id, name, teacher)
-        values(#{id}, #{name}, #{teacher});
+        insert into tb_course(id, name, size, teacher)
+        values(#{id}, #{name}, #{size}, #{teacher});
     </insert>
 
     <delete id="deleteById">

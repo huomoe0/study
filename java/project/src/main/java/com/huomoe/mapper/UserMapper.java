@@ -15,7 +15,7 @@ public interface UserMapper {
     @Select("select * from tb_user where id = #{id}")
     User selectById(Integer id);
 
-    User checkAccount(@Param("username") String username, @Param("password") String password);
+    User checkAccount(@Param("id") Integer id, @Param("password") String password);
 
     @Update("update tb_user set password = #{password} where id = #{id}")
     void update(@Param("id")Integer id, @Param("password")String password);

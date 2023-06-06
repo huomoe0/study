@@ -17,4 +17,5 @@ public interface CourseMapper {
     void add(Course c);
 
     void deleteById(Integer id);
+
 }

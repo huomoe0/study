@@ -32,6 +32,9 @@
         </where>
     </select>
 
+    <select id="selectAll" resultType="com.huomoe.vo.StudentCourse">
+        select * from tb_studentcourse;
+    </select>
 
 
 </mapper>
