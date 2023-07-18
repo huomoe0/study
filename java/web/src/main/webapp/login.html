@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>login</title>
+</head>
+<body>
+    <form action="/loginServlet" id="form">
+      <h1 id="loginMsg">LOGIN IN</h1>
+      <p>username:<input id="username" type="text" name="username"></p>
+      <p>password:<input id="password" type="password" name="password"></p>
+        <input type="submit"><br>
+        <a href="register.html">没有账号？点击注册</a>
+
+    </form>
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+    <script>
+        // document.getElementById("username").onblur = function () {
+        //     var xhttp = new XMLHttpRequest();
+        //
+        //     var username = this.value;
+        //
+        //     xhttp.open("GET", "http://localhost:8080/selectUserServlet?username=" + username);
+        //     xhttp.send();
+        //
+        //     xhttp.onreadystatechange = function () {
+        //         if(this.readyState === 4 && this.status === 200) {
+        //             alert(this.responseText);
+        //         }
+        //     }
+        //
+        // }
+
+
+        // axios
+        axios({
+            method:"post",
+            url: "http://localhost:8080/axiosServlet",
+            data:"username=zhangsan"
+        }).then(function (resp) {
+            alert(resp.data)
+        })
+
+    </script>
+
+</body>
+</html>

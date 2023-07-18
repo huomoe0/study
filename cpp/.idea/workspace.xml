@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CMakeSettings">
+    <configurations>
+      <configuration PROFILE_NAME="Debug" ENABLED="true" CONFIG_NAME="Debug" />
+    </configurations>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="7361f302-bcfc-4147-8a23-696291cfdf93" name="更改" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/cpp.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java/brand-case/src/main/java/com/huomoe/service/BrandService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java/brand-demo/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java/brand-demo/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java/brand-demo/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java/brand-demo/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java/brand-demo/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java/brand-demo/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java/brand-demo/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java/springmvc/springmvc1/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java/springmvc/springmvc1/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java/springmvc/springmvc1/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java/springmvc/springmvc1/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java/springmvc/springmvc1/src/main/webapp/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java/vue-demo/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java/vue-demo/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java/vue-demo/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java/vue-demo/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java/vue-demo/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java/vue-demo/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java/vue-demo/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java/vue-demo/src/main/webapp/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java/web/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java/web/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java/web/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java/web/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java/web/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java/web/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java/web/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../python/pythonProject/.idea/pythonProject.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tcpecho_client.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tcpecho_server.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java/homework9/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java/homework9/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java/homework9/.idea/libraries/jxl_2_6_12.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java/homework9/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java/homework9/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java/homework9/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java/homework9/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java/homework9/data/grade.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java/homework9/data/grade.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java/homework9/data/user.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java/homework9/homework9.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java/homework9/lib/jxl-2.6.12.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java/homework9/src/Course.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java/homework9/src/CourseStatistic.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java/homework9/src/Driver.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java/homework9/src/Student.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java/homework9/src/Sys.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java/project/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java/project/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java/project/.idea/dataSources.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java/project/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java/project/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java/project/.idea/sqldialects.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java/project/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java/project/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java/project/course.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java/project/grade.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java/project/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java/project/src/main/java/com/huomoe/Driver.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java/project/src/main/java/com/huomoe/dao/CourseDAO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java/project/src/main/java/com/huomoe/dao/UserDAO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java/project/src/main/java/com/huomoe/mapper/CourseMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java/project/src/main/java/com/huomoe/mapper/StudentCourseMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java/project/src/main/java/com/huomoe/mapper/UserMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java/project/src/main/java/com/huomoe/util/Util.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java/project/src/main/java/com/huomoe/vo/Course.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java/project/src/main/java/com/huomoe/vo/StudentCourse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java/project/src/main/java/com/huomoe/vo/User.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java/project/src/main/resources/com/huomoe/mapper/CourseMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java/project/src/main/resources/com/huomoe/mapper/StudentCourseMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java/project/src/main/resources/com/huomoe/mapper/UserMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java/project/src/main/resources/config.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java/project/src/main/resources/mybatis-config.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java/project/src/test/java/MybatisTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java/project/user.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java/study/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java/study/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java/study/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java/study/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java/study/.idea/libraries/jxl_2_6_12.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java/study/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java/study/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java/study/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java/study/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java/study/data/1.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java/study/data/stu.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java/study/lib/jxl-2.6.12.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java/study/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java/study/src/week1/Biscuits.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java/study/src/week1/Frame.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java/study/src/week1/Hello.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java/study/src/week1/VendingMachine.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java/study/src/week10/Excel/ExcelTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java/study/src/week10/Excel/ExcelTest1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java/study/src/week10/Excel/Student.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java/study/src/week10/FileCopy/Copy.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java/study/src/week2/Daffodils.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java/study/src/week2/Grade.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java/study/src/week2/Guess.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java/study/src/week2/Menu.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java/study/src/week3/Employee.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java/study/src/week3/EmployeeDriver.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java/study/src/week3/Rectangle.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java/study/src/week3/RectangleDriver.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java/study/src/week3/Student.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java/study/src/week3/StudentDriver.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java/study/src/week4/ClassList/ClassList.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java/study/src/week4/ClassList/ClassListDriver.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java/study/src/week4/ClassList/Student.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java/study/src/week4/ClassList/Subject.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java/study/src/week4/Project/Employee.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java/study/src/week4/Project/Project.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java/study/src/week4/Project/ProjectDriver.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java/study/src/week4/System/Student.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java/study/src/week4/System/Subject.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java/study/src/week4/System/SubjectEnrolment.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java/study/src/week4/System/SubjectEnrolmentDriver.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java/study/src/week5/Bank/BankAccount.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java/study/src/week5/Bank/BankDriver.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java/study/src/week5/Bank/CheckingAccount.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java/study/src/week5/Bank/Customer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java/study/src/week5/Bank/SavingAccount.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java/study/src/week5/Employee/Administrator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java/study/src/week5/Employee/Driver.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java/study/src/week5/Employee/Employee.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java/study/src/week5/Employee/SalesPerson.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java/study/src/week5/Rect/Cubic.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java/study/src/week5/Rect/Driver.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java/study/src/week5/Rect/Pyramid.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java/study/src/week5/Rect/Rect.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java/study/src/week5/School/Employee.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java/study/src/week5/School/Faculty.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java/study/src/week5/School/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java/study/src/week5/School/Role.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java/study/src/week5/School/Staff.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java/study/src/week5/School/Student.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java/study/src/week6/Expression/Express.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java/study/src/week6/Expression/ExpressDriver.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java/study/src/week6/Generate/Generate.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java/study/src/week6/Generate/GenerateDriver.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java/study/src/week6/Password/Password.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java/study/src/week6/Password/PasswordDriver.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java/study/src/week7/Sale/Demo2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java/study/src/week7/Sale/GenerateSequence.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java/study/src/week7/Sale/Sale.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java/study/src/week7/Sale/Test.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java/study/src/week7/Test/Result.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java/study/src/week7/Test/Student.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java/study/src/week7/Test/StudentDAO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java/study/src/week7/Test/StudentDriver.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java/study/src/week8/Regex/Expression.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java/study/src/week8/Regex/Html.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java/study/src/week8/Student/Driver.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java/study/src/week8/Student/dao/CourseDAO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java/study/src/week8/Student/vo/Course.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java/study/src/week8/Student/vo/CourseStatics.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java/study/src/week8/Student/vo/Student.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java/study/src/week9/Copy/Copy.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java/study/src/week9/Copy/Expression.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java/study/src/week9/Copy/answer.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java/study/src/week9/Copy/question.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java/study/src/week9/File/Test1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java/study/src/week9/File/data.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java/study/src/week9/File/test.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java/study/src/week9/Four/Four.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java/study/src/week9/Four/answer.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java/study/src/week9/Four/question.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java/study/src/week9/Random/Exp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java/study/src/week9/Random/Expression.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java/study/src/week9/Random/answer.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java/study/src/week9/Random/question.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java/study/src/week9/Sql/Sql.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java/study/src/week9/Sql/Student.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java/study/src/week9/Sql/data.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java/study/study.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java/test/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java/test/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java/test/.idea/libraries/NBTEdit_1_12_2_0_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java/test/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java/test/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java/test/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java/test/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java/test/src/NBTEdit-1.12-2.0.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java/test/test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java/week11/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java/week11/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java/week11/.idea/libraries/jxl_2_6_12.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java/week11/.idea/libraries/mysql_connector_java_8_0_28.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java/week11/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java/week11/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java/week11/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java/week11/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java/week11/data/output.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java/week11/data/output.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java/week11/data/stu.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java/week11/data/stu.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java/week11/lib/jxl-2.6.12.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java/week11/lib/mysql-connector-java-8.0.28.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java/week11/src/JDBC/Driver.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java/week11/src/JDBC/JDBCUtil.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java/week11/src/JDBC/Student.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java/week11/src/JDBC/StudentDAO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java/week11/week11.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java/week12/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java/week12/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java/week12/.idea/libraries/jxl_2_6_12.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java/week12/.idea/libraries/mysql_connector_java_8_0_28.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java/week12/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java/week12/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java/week12/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java/week12/config/db.config" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java/week12/lib/jxl-2.6.12.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java/week12/lib/mysql-connector-java-8.0.28.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java/week12/src/dao/ProductDAO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java/week12/src/dao/SaleDetail.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java/week12/src/dao/UserDAO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java/week12/src/util/Encrypt.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java/week12/src/util/JDBCUtil.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java/week12/src/util/LSH.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java/week12/src/view/Driver.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java/week12/src/vo/User.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java/week12/week12.iml" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="2SCawkJVrhQ5xapEAhnwpmO28oB" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;cf.first.check.clang-format&quot;: &quot;false&quot;,
+    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.Mappings&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="默认任务">
+      <changelist id="7361f302-bcfc-4147-8a23-696291cfdf93" name="更改" comment="" />
+      <created>1688653258141</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1688653258141</updated>
+      <workItem from="1688653259311" duration="12000" />
+      <workItem from="1689321144270" duration="226000" />
+      <workItem from="1689321568081" duration="24000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
