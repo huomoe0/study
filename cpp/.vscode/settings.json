@@ -1,7 +1,0 @@
-{
-    "cph.general.onceMaintainerMessage": false,
-    "files.associations": {
-        "iosfwd": "cpp",
-        "iostream": "cpp"
-    }
-}
